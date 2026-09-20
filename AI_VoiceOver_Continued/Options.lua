@@ -772,6 +772,18 @@ local SlashCommands = {
                 Extras:PlayVoicePreviews()
             end
         },
+        Scan = {
+            type = "execute",
+            order = 85.7,
+            name = "Scan Quest Log",
+            desc = "Collect the description of every quest in your log that has no recording",
+            dropdownHidden = true,
+            func = function(info)
+                local scanned, recorded = MissingLines:ScanQuestLog()
+                print(format("|cFF00CCFFVoiceOver:|r scanned %d quests, collected %d new lines. /reload or log out to save them.",
+                    scanned, recorded))
+            end
+        },
         Missing = {
             type = "execute",
             order = 86,

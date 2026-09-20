@@ -177,6 +177,69 @@ function MissingLines:Record(soundData)
     Debug:Record("missing-line", format("Recorded missing voice line %s", key))
 end
 
+--- Records the description of every quest in the player's log that has no recording.
+--- The client hands those texts out without talking to the quest giver, so this fills
+--- gaps from quests picked up before the addon was installed.
+---@return number scanned, number recorded
+function MissingLines:ScanQuestLog()
+    local entries, recorded = 0, 0
+    local previous = C_QuestLog and C_QuestLog.GetSelectedQuest and C_QuestLog.GetSelectedQuest()
+
+    local function RecordQuest(questID, title)
+        if not questID or questID == 0 then
+            return
+        end
+        entries = entries + 1
+        if DataModules:PrepareSound({ event = Enums.SoundEvent.QuestAccept, questID = questID }) then
+            return -- a recording already exists
+        end
+        local before = MissingLines:Count()
+        if C_QuestLog and C_QuestLog.SetSelectedQuest then
+            C_QuestLog.SetSelectedQuest(questID)
+        elseif SelectQuestLogEntry then
+            SelectQuestLogEntry(questID)
+        end
+        local description = GetQuestLogQuestText and GetQuestLogQuestText()
+        if description and description ~= "" then
+            local type, id = DataModules:GetQuestLogQuestGiverTypeAndID(questID)
+            self:Record({
+                event = Enums.SoundEvent.QuestAccept,
+                questID = questID,
+                title = title,
+                text = description,
+                name = id and DataModules:GetObjectName(type, id) or "Quest Log",
+                unitGUID = id and Enums.GUID:CanHaveID(type) and Utils:MakeGUID(type, id) or nil,
+                npcSex = false,
+            })
+            if MissingLines:Count() > before then
+                recorded = recorded + 1
+            end
+        end
+    end
+
+    if C_QuestLog and C_QuestLog.GetNumQuestLogEntries and C_QuestLog.GetInfo then
+        for index = 1, (C_QuestLog.GetNumQuestLogEntries()) do
+            local info = C_QuestLog.GetInfo(index)
+            if info and not info.isHeader then
+                RecordQuest(info.questID, info.title)
+            end
+        end
+    elseif GetNumQuestLogEntries and GetQuestLogTitle then
+        for index = 1, (GetNumQuestLogEntries()) do
+            local title, _, _, isHeader, _, _, _, questID = GetQuestLogTitle(index)
+            if not isHeader then
+                RecordQuest(questID, title)
+            end
+        end
+    end
+
+    if previous and previous ~= 0 and C_QuestLog and C_QuestLog.SetSelectedQuest then
+        C_QuestLog.SetSelectedQuest(previous)
+    end
+    Debug:Record("questlog-scan", format("Scanned %d quests, recorded %d", entries, recorded))
+    return entries, recorded
+end
+
 function MissingLines:Count()
     local count = 0
     for _ in pairs(GetStore()) do
