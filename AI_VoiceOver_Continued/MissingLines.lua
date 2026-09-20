@@ -39,6 +39,27 @@ local MODEL_RACES = {
     [122738] = "tuskarr", [122815] = "vrykul",
 }
 
+--- Replaces the player's own name, class and race with the game's placeholders, so
+--- collected lines can be shared with others without carrying personal data.
+local function Anonymize(text)
+    if not text or text == "" then
+        return text
+    end
+    local replacements = {
+        { UnitName and UnitName("player"), "$N" },
+        { UnitClass and UnitClass("player"), "$C" },
+        { UnitRace and UnitRace("player"), "$R" },
+    }
+    for _, pair in ipairs(replacements) do
+        local value, placeholder = pair[1], pair[2]
+        if value and value ~= "" then
+            local pattern = string.gsub(value, "(%W)", "%%%1")
+            text = string.gsub(text, pattern, placeholder)
+        end
+    end
+    return text
+end
+
 local function GetStore()
     local global = Addon.db.global
     global.MissingLines = global.MissingLines or {}
@@ -95,7 +116,7 @@ function MissingLines:Record(soundData)
     if not Addon.db.profile.TTS.CollectMissing then
         return
     end
-    local text = soundData.text
+    local text = Anonymize(soundData.text)
     if not text or text == "" then
         return
     end
@@ -136,7 +157,7 @@ function MissingLines:Record(soundData)
     local entry = {
         event = eventName,
         questID = soundData.questID ~= 0 and soundData.questID or nil,
-        title = soundData.title,
+        title = Anonymize(soundData.title),
         npc = soundData.name,
         npcID = npcID,
         npcType = npcType,

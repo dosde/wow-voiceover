@@ -159,7 +159,7 @@ local defaults = {
             StopAudioOnDisengage = false,
         },
         TTS = {
-            Enabled = true,          -- Read lines without a recording through the client's text-to-speech
+            Enabled = false,         -- Windows text-to-speech for lines without a recording (off: they stay silent)
             Gossip = true,           -- Also read NPC gossip without a recording
             ReadTitle = true,        -- Prepend the quest title when reading a quest
             MaleVoice = nil,         -- voiceID, nil = automatic
