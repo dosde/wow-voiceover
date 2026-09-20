@@ -13,6 +13,18 @@ placeholders (`$N`, `$C`, `$R`) when the addon records a line.
 Put `auto_generate.ps1` in your autostart and run `contribute.py` afterwards to do this
 without thinking about it.
 
+## How a line gets in
+
+A line is only added once **two different contributors** report the very same text for it.
+Until then it waits in `pending_lines.json` with its vote count - sending your collection
+again after someone else reported a line is what confirms it.
+
+If contributors disagree about the text, the version in the lead also needs twice the votes
+of the runner-up. A single faked contribution can therefore neither enter the collection nor
+block a real line. Contributions carry a random id per installation, so votes can be counted
+without anyone knowing who contributed what; the GitHub account behind a pull request stays
+visible as usual.
+
 ## Using the collection
 
 `collected_lines.json` is rebuilt from every contribution. Feed it into the generator:

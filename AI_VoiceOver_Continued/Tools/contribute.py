@@ -19,8 +19,8 @@ by hand is printed.
 """
 
 import argparse
-import hashlib
 import json
+import secrets
 import os
 import re
 import subprocess
@@ -42,6 +42,19 @@ COMBINED_FILE = "community/collected_lines.json"
 SHARED_FIELDS = ("event", "questID", "title", "npc", "npcID", "npcType", "sex", "model",
                  "race", "zone", "subzone", "text", "locale", "gender")
 NAME_PATTERN = re.compile(r"\b[A-ZÄÖÜ][a-zäöüß]{2,11}\b")
+
+
+def contributor_id():
+    """A random id for this installation, so votes can be counted without knowing who you are."""
+    path = CACHE_DIR / "contributor.txt"
+    if path.exists():
+        value = path.read_text(encoding="utf-8").strip()
+        if len(value) == 16:
+            return value
+    value = secrets.token_hex(8)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(value, encoding="utf-8")
+    return value
 
 
 def git(*args, cwd, check=True):
@@ -100,16 +113,10 @@ def open_pull_request(token, head, title, body):
 
 
 def merge_lines(checkout):
-    """Combines every contribution into one file, newest information winning per key."""
-    combined = {}
-    for path in sorted((checkout / LINES_DIR).glob("*.json")):
-        for key, entry in json.loads(path.read_text(encoding="utf-8")).items():
-            known = combined.get(key)
-            # Prefer the entry that knows more about the speaker
-            if not known or (not known.get("npcID") and entry.get("npcID")) or (not known.get("race") and entry.get("race")):
-                combined[key] = entry
-    write_json(checkout / COMBINED_FILE, combined)
-    return combined
+    """Runs the repository's own validation and vote counting."""
+    subprocess.run([sys.executable, str(checkout / "community" / "validate_lines.py"), "--check", "--rebuild"],
+                   cwd=checkout, check=True)
+    return read_json(checkout / COMBINED_FILE, {})
 
 
 def main():
@@ -141,8 +148,12 @@ def main():
 
     entries, names = collect(args.account)
     existing = read_json(checkout / COMBINED_FILE, {})
+    # Lines that are still waiting for confirmation are worth sending again - that is the second vote
     new = {k: v for k, v in entries.items() if k not in existing}
-    print(f"{len(entries)} collected lines, {len(new)} of them not in the community file yet")
+    pending = read_json(checkout / "community/pending_lines.json", {})
+    confirming = sum(1 for k in new if k in pending)
+    print(f"{len(entries)} collected lines, {len(new)} not in the community file yet"
+          f" ({confirming} of them would confirm a line someone else reported)")
     suspicious = warn_about_names(new, names)
     if suspicious:
         print("Stopping: these character names are still in the texts:", ", ".join(sorted(suspicious)))
@@ -156,9 +167,10 @@ def main():
         return
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
-    digest = hashlib.md5(json.dumps(sorted(new), ensure_ascii=False).encode("utf-8")).hexdigest()[:8]
-    name = f"{stamp}-{digest}"
-    write_json(checkout / LINES_DIR / f"{name}.json", new)
+    contributor = contributor_id()
+    name = f"{stamp}-{contributor[:8]}"
+    payload = {"_meta": {"contributor": contributor, "collected": stamp}, **new}
+    write_json(checkout / LINES_DIR / f"{name}.json", payload)
 
     branch = f"lines/{name}"
     git("checkout", "-b", branch, cwd=checkout)
