@@ -9,7 +9,7 @@ on:
       - "community/lines/**"
       - "community/validate_lines.py"
   push:
-    branches: [forever]
+    branches: [master]
     paths:
       - "community/lines/**"
 

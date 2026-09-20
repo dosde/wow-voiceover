@@ -35,7 +35,7 @@ sys.path.insert(0, str(TOOLS_DIR))
 from generate_voices import find_saved_variables, load_missing_lines, read_api_key, read_json, write_json  # noqa: E402
 
 REPOSITORY = "dosde/wow-voiceover"
-BRANCH_BASE = "forever"
+BRANCH_BASE = "master"
 LINES_DIR = "community/lines"
 COMBINED_FILE = "community/collected_lines.json"
 # Fields that are shared; everything else (timestamps, local state) stays on your machine

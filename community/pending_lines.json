@@ -1,1 +1,44 @@
-{}
+{
+ "6322-progress": {
+  "_hash": "01c43ea5bbac",
+  "_needed": 2,
+  "_variants": 1,
+  "_votes": 1,
+  "event": "progress",
+  "npc": "Michael Garrett",
+  "npcID": 4551,
+  "npcType": "creature",
+  "questID": 6322,
+  "sex": 2,
+  "text": "If you must travel a long distance, then a bat is your best option.",
+  "title": "Michael Garrett"
+ },
+ "6323-progress": {
+  "_hash": "d6fef7efdc18",
+  "_needed": 2,
+  "_variants": 1,
+  "_votes": 1,
+  "event": "progress",
+  "npc": "Gordon Wendham",
+  "npcID": 4556,
+  "npcType": "creature",
+  "questID": 6323,
+  "sex": 2,
+  "text": "I keep my weapons in top condition.  They are cleaned and ready for use.",
+  "title": "Ride to the Undercity"
+ },
+ "6324-progress": {
+  "_hash": "8e665362b7f9",
+  "_needed": 2,
+  "_variants": 1,
+  "_votes": 1,
+  "event": "progress",
+  "npc": "Deathguard Podrig",
+  "npcID": 6389,
+  "npcType": "creature",
+  "questID": 6324,
+  "sex": 2,
+  "text": "Dousureba, you return.  Do you have our supplies from the Undercity?",
+  "title": "Return to Podrig"
+ }
+}
