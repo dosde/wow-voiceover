@@ -1,0 +1,5 @@
+# Never commit API keys
+Tools/.env
+# Downloaded database, generated audio and caches
+Tools/cache/
+*.mp3

@@ -1,0 +1,10 @@
+## Interface: 11200
+## Title: VoiceOver Continued
+## Notes: Adds voiceovers to NPCs.
+## Version: 1.6.1
+## SavedVariables: VoiceOverDB
+## X-Part-Of: VoiceOver Continued
+## X-VoiceOver-Player: 1
+
+1.12\embeds.xml
+addon.xml

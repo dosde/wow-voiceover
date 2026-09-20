@@ -1,0 +1,3240 @@
+{
+ "_help": "Voice profiles per race. 'edge' lists Microsoft neural voices (free), 'elevenlabs' lists ElevenLabs voice IDs (paid, from your Voice Library). Each NPC always gets the same voice from its list. pitch/rate only apply to edge. Races come from the NPC's 3D model; if unknown, 'zones' guesses from the zone/subzone name. 'monster' = non-humanoid model, 'narrator' = objects, items and the quest log. 'profiles_de' is used with --language de.",
+ "zones": {
+  "Dun Morogh": "dwarf",
+  "Ironforge": "dwarf",
+  "Loch Modan": "dwarf",
+  "Kharanos": "dwarf",
+  "Coldridge Valley": "dwarf",
+  "Thelsamar": "dwarf",
+  "Gnomeregan": "gnome",
+  "Elwynn Forest": "human",
+  "Stormwind City": "human",
+  "Westfall": "human",
+  "Redridge Mountains": "human",
+  "Duskwood": "human",
+  "Northshire Valley": "human",
+  "Goldshire": "human",
+  "Lakeshire": "human",
+  "Darkshire": "human",
+  "Hillsbrad Foothills": "human",
+  "Arathi Highlands": "human",
+  "Teldrassil": "nightelf",
+  "Darnassus": "nightelf",
+  "Darkshore": "nightelf",
+  "Ashenvale": "nightelf",
+  "Moonglade": "nightelf",
+  "Shadowglen": "nightelf",
+  "Dolanaar": "nightelf",
+  "Auberdine": "nightelf",
+  "Astranaar": "nightelf",
+  "Durotar": "orc",
+  "Orgrimmar": "orc",
+  "Valley of Trials": "orc",
+  "Razor Hill": "orc",
+  "The Crossroads": "orc",
+  "Echo Isles": "troll",
+  "Sen'jin Village": "troll",
+  "Mulgore": "tauren",
+  "Thunder Bluff": "tauren",
+  "Camp Narache": "tauren",
+  "Bloodhoof Village": "tauren",
+  "Tirisfal Glades": "undead",
+  "Undercity": "undead",
+  "Deathknell": "undead",
+  "Brill": "undead",
+  "Silverpine Forest": "undead",
+  "The Sepulcher": "undead",
+  "Booty Bay": "goblin",
+  "Gadgetzan": "goblin",
+  "Ratchet": "goblin",
+  "Everlook": "goblin",
+  "Eisenschmiede": "dwarf",
+  "Coldridgetal": "dwarf",
+  "Wald von Elwynn": "human",
+  "Sturmwind": "human",
+  "Rotkammgebirge": "human",
+  "Dämmerwald": "human",
+  "Nordhaintal": "human",
+  "Goldhain": "human",
+  "Seenhain": "human",
+  "Dunkelhain": "human",
+  "Vorgebirge des Hügellands": "human",
+  "Arathihochland": "human",
+  "Dunkelküste": "nightelf",
+  "Eschental": "nightelf",
+  "Mondlichtung": "nightelf",
+  "Laubschattental": "nightelf",
+  "Tal der Prüfungen": "orc",
+  "Klingenhügel": "orc",
+  "Das Wegekreuz": "orc",
+  "Die Echoinseln": "troll",
+  "Sen'jin": "troll",
+  "Donnerfels": "tauren",
+  "Blutrangdorf": "tauren",
+  "Tirisfal": "undead",
+  "Unterstadt": "undead",
+  "Todesend": "undead",
+  "Silberwald": "undead",
+  "Das Grabmal": "undead",
+  "Beutebucht": "goblin",
+  "Ratschet": "goblin",
+  "Ewige Warte": "goblin"
+ },
+ "profiles": {
+  "default": {
+   "male": {
+    "edge": [
+     "en-US-GuyNeural",
+     "en-US-ChristopherNeural",
+     "en-US-EricNeural",
+     "en-US-BrianNeural",
+     "en-US-AndrewNeural"
+    ],
+    "elevenlabs": [
+     "pNInz6obpgDQGcFmaJgB",
+     "TxGEqnHWrfWFTfGW9XjX",
+     "ErXwobaYiN019PkySvjV"
+    ],
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "An adult of Azeroth, clear and natural, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "An adult of Azeroth, clear and natural, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "An adult of Azeroth, clear and natural, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "An adult of Azeroth, clear and natural, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "An adult of Azeroth, clear and natural, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "An adult of Azeroth, clear and natural, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "An adult of Azeroth, clear and natural, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "An adult of Azeroth, clear and natural, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "thoughtful and quiet, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "rough and weathered, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-US-JennyNeural",
+     "en-US-AriaNeural",
+     "en-US-MichelleNeural",
+     "en-US-AvaNeural",
+     "en-US-EmmaNeural"
+    ],
+    "elevenlabs": [
+     "21m00Tcm4TlvDq8ikWAM",
+     "EXAVITQu4vr4xnJ4tVnU"
+    ],
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "An adult of Azeroth, clear and natural, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "An adult of Azeroth, clear and natural, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "An adult of Azeroth, clear and natural, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "An adult of Azeroth, clear and natural, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "An adult of Azeroth, clear and natural, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "An adult of Azeroth, clear and natural, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "An adult of Azeroth, clear and natural, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "An adult of Azeroth, clear and natural, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "thoughtful and quiet, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "rough and weathered, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "human": {
+   "male": {
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "battle-worn and disillusioned, speaking softly, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "dry and sardonic, not heroic at all, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A human of Stormwind: heroic, clear, slightly theatrical, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "battle-worn and disillusioned, speaking softly, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "dry and sardonic, not heroic at all, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "dwarf": {
+   "male": {
+    "edge": [
+     "en-IE-ConnorNeural",
+     "en-GB-ThomasNeural"
+    ],
+    "pitch": "-5Hz",
+    "effect": "big",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a dwarf, but surprisingly gentle, calm and scholarly, no accent, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a dwarf with a bright, quick, chipper voice, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-IE-EmilyNeural"
+    ],
+    "pitch": "-2Hz",
+    "effect": "big",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A dwarf: very deep, gruff, thick Scottish brogue, rolled R, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "a dwarf, but surprisingly gentle, calm and scholarly, no accent, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "a dwarf with a bright, quick, chipper voice, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "gnome": {
+   "male": {
+    "edge": [
+     "en-GB-RyanNeural",
+     "en-NZ-MitchellNeural"
+    ],
+    "pitch": "+12Hz",
+    "rate": "+10%",
+    "effect": "tiny",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a gnome with a surprisingly deep, calm, dry voice, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a gnome, dead serious and deliberate, almost grim, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-GB-MaisieNeural",
+     "en-NZ-MollyNeural"
+    ],
+    "pitch": "+10Hz",
+    "rate": "+10%",
+    "effect": "tiny",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A gnome: squeaky high, very fast, hyperactive and nerdy, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "a gnome with a surprisingly deep, calm, dry voice, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "a gnome, dead serious and deliberate, almost grim, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "nightelf": {
+   "male": {
+    "edge": [
+     "en-GB-RyanNeural",
+     "en-GB-ThomasNeural"
+    ],
+    "rate": "-5%",
+    "effect": "airy",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a night elf, surprisingly warm, hearty and direct, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a night elf, hurried and tense, not lofty at all, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-GB-SoniaNeural",
+     "en-GB-LibbyNeural"
+    ],
+    "rate": "-5%",
+    "effect": "airy",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A night elf: solemn, drawn-out, haughty, every syllable weighty, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "a night elf, surprisingly warm, hearty and direct, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "a night elf, hurried and tense, not lofty at all, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "bloodelf": {
+   "male": {
+    "edge": [
+     "en-GB-ThomasNeural"
+    ],
+    "effect": "airy",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a blood elf, surprisingly modest and friendly, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a blood elf, bitter and desperate rather than arrogant, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-GB-LibbyNeural",
+     "en-GB-SoniaNeural"
+    ],
+    "effect": "airy",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A blood elf: snooty, arrogant, bored, condescending, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "a blood elf, surprisingly modest and friendly, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "a blood elf, bitter and desperate rather than arrogant, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "draenei": {
+   "male": {
+    "edge": [
+     "en-ZA-LukeNeural"
+    ],
+    "pitch": "-6Hz",
+    "effect": "stone",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a draenei, light and cheerful, almost buoyant, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a draenei without accent, clear and matter-of-fact, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-ZA-LeahNeural"
+    ],
+    "effect": "stone",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A draenei: deep, dignified, heavy Eastern European accent, slow, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "a draenei, light and cheerful, almost buoyant, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "a draenei without accent, clear and matter-of-fact, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "orc": {
+   "male": {
+    "edge": [
+     "en-US-RogerNeural",
+     "en-US-SteffanNeural",
+     "en-US-GuyNeural"
+    ],
+    "pitch": "-9Hz",
+    "rate": "-5%",
+    "effect": "big",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "An orc: very deep, guttural, growling, aggressive, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "An orc: very deep, guttural, growling, aggressive, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "An orc: very deep, guttural, growling, aggressive, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "An orc: very deep, guttural, growling, aggressive, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "An orc: very deep, guttural, growling, aggressive, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "An orc: very deep, guttural, growling, aggressive, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "An orc: very deep, guttural, growling, aggressive, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "An orc: very deep, guttural, growling, aggressive, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "an orc, surprisingly gentle and thoughtful, almost wise, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "an orc with a lighter, quicker, cunning voice, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-US-AriaNeural",
+     "en-US-JennyNeural"
+    ],
+    "pitch": "-4Hz",
+    "effect": "big",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "An orc: very deep, guttural, growling, aggressive, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "An orc: very deep, guttural, growling, aggressive, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "An orc: very deep, guttural, growling, aggressive, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "An orc: very deep, guttural, growling, aggressive, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "An orc: very deep, guttural, growling, aggressive, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "An orc: very deep, guttural, growling, aggressive, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "An orc: very deep, guttural, growling, aggressive, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "An orc: very deep, guttural, growling, aggressive, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "an orc, surprisingly gentle and thoughtful, almost wise, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "an orc with a lighter, quicker, cunning voice, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "tauren": {
+   "male": {
+    "edge": [
+     "en-US-RogerNeural",
+     "en-US-ChristopherNeural"
+    ],
+    "pitch": "-12Hz",
+    "rate": "-12%",
+    "effect": "huge",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a tauren, young and lively, speaking faster than expected, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a tauren, grim and terse rather than wise, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-US-JennyNeural"
+    ],
+    "pitch": "-6Hz",
+    "rate": "-8%",
+    "effect": "huge",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A tauren: extremely deep, very slow, calm and venerable, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "a tauren, young and lively, speaking faster than expected, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "a tauren, grim and terse rather than wise, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "troll": {
+   "male": {
+    "edge": [
+     "en-NG-AbeoNeural",
+     "en-KE-ChilembaNeural",
+     "en-TZ-ElimuNeural"
+    ],
+    "effect": "rough",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a troll, matter-of-fact, barely any lilt, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a troll, manic and shrill like a barker, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-NG-EzinneNeural",
+     "en-KE-AsiliaNeural",
+     "en-TZ-ImaniNeural"
+    ],
+    "effect": "rough",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A troll: Caribbean singsong, drawn-out vowels, laid-back and mysterious, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "a troll, matter-of-fact, barely any lilt, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "a troll, manic and shrill like a barker, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "undead": {
+   "male": {
+    "edge": [
+     "en-GB-RyanNeural",
+     "en-US-SteffanNeural"
+    ],
+    "pitch": "-12Hz",
+    "rate": "-8%",
+    "effect": "hollow",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "an undead, surprisingly clear and friendly, almost alive, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "an undead, sarcastic and amused rather than bitter, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-GB-SoniaNeural"
+    ],
+    "pitch": "-8Hz",
+    "rate": "-8%",
+    "effect": "hollow",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "An undead Forsaken: rasping, hoarse, hollow, cold and bitter, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "an undead, surprisingly clear and friendly, almost alive, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "an undead, sarcastic and amused rather than bitter, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "goblin": {
+   "male": {
+    "edge": [
+     "en-US-AndrewNeural",
+     "en-US-EricNeural"
+    ],
+    "pitch": "+6Hz",
+    "rate": "+15%",
+    "effect": "small",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a goblin with a deep, calm, businesslike voice, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a goblin, tired and bored, speaking slowly, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-US-AvaNeural"
+    ],
+    "pitch": "+5Hz",
+    "rate": "+15%",
+    "effect": "small",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A goblin: shrill, nasal, blazing fast, pushy salesman, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "a goblin with a deep, calm, businesslike voice, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "a goblin, tired and bored, speaking slowly, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "vrykul": {
+   "male": {
+    "edge": [
+     "en-GB-ThomasNeural"
+    ],
+    "pitch": "-10Hz",
+    "rate": "-8%",
+    "effect": "huge",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A vrykul: thunderously deep, Nordic, nearly shouting, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A vrykul: thunderously deep, Nordic, nearly shouting, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A vrykul: thunderously deep, Nordic, nearly shouting, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A vrykul: thunderously deep, Nordic, nearly shouting, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A vrykul: thunderously deep, Nordic, nearly shouting, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A vrykul: thunderously deep, Nordic, nearly shouting, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A vrykul: thunderously deep, Nordic, nearly shouting, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A vrykul: thunderously deep, Nordic, nearly shouting, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a vrykul, quiet and menacing instead of loud, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a vrykul, calm and storytelling like a skald, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "naga": {
+   "male": {
+    "edge": [
+     "en-GB-RyanNeural"
+    ],
+    "pitch": "-15Hz",
+    "effect": "sibilant",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a naga, cool and precise, barely hissing, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a naga, frantic and feverish, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-GB-SoniaNeural"
+    ],
+    "pitch": "-6Hz",
+    "effect": "sibilant",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A naga: hissing, slithering, dragging every S, lurking, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "a naga, cool and precise, barely hissing, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "a naga, frantic and feverish, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "monster": {
+   "male": {
+    "edge": [
+     "en-US-RogerNeural"
+    ],
+    "pitch": "-15Hz",
+    "rate": "-15%",
+    "elevenlabs": [
+     "VR6AewLTigWG4xSOukaG"
+    ],
+    "effect": "huge",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a beast with an eerily calm, almost gentle voice, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a beast, panting and feral, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-GB-SoniaNeural"
+    ],
+    "pitch": "-7Hz",
+    "rate": "-10%",
+    "effect": "huge",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A beast: inhuman deep rumble, growling and lumbering, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "a beast with an eerily calm, almost gentle voice, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "a beast, panting and feral, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  },
+  "narrator": {
+   "male": {
+    "edge": [
+     "en-GB-RyanNeural"
+    ],
+    "elevenlabs": [
+     "JBFqnCBsd6RMkjVDRZzb"
+    ],
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ballad",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "verse",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "cedar",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "fable",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "ash",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "onyx",
+      "style": "a narrator, dark and incantatory, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "echo",
+      "style": "a narrator, warm and fatherly, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "en-GB-RyanNeural"
+    ],
+    "elevenlabs": [
+     "JBFqnCBsd6RMkjVDRZzb"
+    ],
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, at full strength. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, at full strength, older and rougher. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, at full strength, young and energetic. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, moderately pronounced, but clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "marin",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, clearly toned down, but still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "alloy",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, toned down, friendly and warm, the traits stay audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "nova",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, spoken more calmly and reserved, but still clearly this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "coral",
+      "style": "A calm narrator, matter-of-fact like an audiobook reader, very restrained and matter-of-fact, yet the origin stays audible. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "sage",
+      "style": "a narrator, dark and incantatory, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     },
+     {
+      "voice": "shimmer",
+      "style": "a narrator, warm and fatherly, while still unmistakably this character. Speak English, in character, but stay easy to understand."
+     }
+    ]
+   }
+  }
+ },
+ "profiles_de": {
+  "default": {
+   "male": {
+    "edge": [
+     "de-DE-ConradNeural",
+     "de-DE-KillianNeural"
+    ],
+    "elevenlabs": [
+     "pNInz6obpgDQGcFmaJgB",
+     "TxGEqnHWrfWFTfGW9XjX",
+     "ErXwobaYiN019PkySvjV"
+    ],
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "nachdenklich und leise, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "rau und lebenserfahren, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-DE-KatjaNeural",
+     "de-DE-AmalaNeural"
+    ],
+    "elevenlabs": [
+     "21m00Tcm4TlvDq8ikWAM",
+     "EXAVITQu4vr4xnJ4tVnU"
+    ],
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Erwachsene Person aus Azeroth, klar und natürlich, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "nachdenklich und leise, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "rau und lebenserfahren, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "human": {
+   "male": {
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "abgekämpft und desillusioniert, spricht leise, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "trocken und spöttisch, völlig unpathetisch, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Mensch aus Sturmwind: heldenhaft, klar, etwas pathetisch wie in einem Ritterfilm, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "abgekämpft und desillusioniert, spricht leise, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "trocken und spöttisch, völlig unpathetisch, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "dwarf": {
+   "male": {
+    "edge": [
+     "de-CH-JanNeural"
+    ],
+    "pitch": "-5Hz",
+    "effect": "big",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Zwerg, aber überraschend sanft, ruhig und gebildet, ohne Akzent, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Zwerg mit heller, schneller, aufgeweckter Stimme, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-CH-LeniNeural"
+    ],
+    "pitch": "-2Hz",
+    "effect": "big",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Zwerg: sehr tief, rau und brummig, schottisch angehaucht, kräftig gerolltes R, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Zwerg, aber überraschend sanft, ruhig und gebildet, ohne Akzent, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Zwerg mit heller, schneller, aufgeweckter Stimme, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "gnome": {
+   "male": {
+    "edge": [
+     "de-AT-JonasNeural"
+    ],
+    "pitch": "+11Hz",
+    "rate": "+10%",
+    "effect": "tiny",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Gnom mit überraschend tiefer, ruhiger, trockener Stimme, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Gnom, todernst und bedächtig, fast düster, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-AT-IngridNeural"
+    ],
+    "pitch": "+9Hz",
+    "rate": "+10%",
+    "effect": "tiny",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Gnom: piepsig hoch, sehr schnell, überdreht und nerdig, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Gnom mit überraschend tiefer, ruhiger, trockener Stimme, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Gnom, todernst und bedächtig, fast düster, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "nightelf": {
+   "male": {
+    "edge": [
+     "de-DE-ConradNeural"
+    ],
+    "pitch": "-4Hz",
+    "rate": "-5%",
+    "effect": "airy",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Nachtelf, überraschend warm, herzlich und unmittelbar, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Nachtelf, hektisch und angespannt, gar nicht erhaben, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-DE-AmalaNeural"
+    ],
+    "rate": "-5%",
+    "effect": "airy",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Nachtelf: feierlich, gedehnt und hochmütig, jede Silbe bedeutungsschwer, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Nachtelf, überraschend warm, herzlich und unmittelbar, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Nachtelf, hektisch und angespannt, gar nicht erhaben, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "bloodelf": {
+   "male": {
+    "edge": [
+     "de-DE-KillianNeural"
+    ],
+    "pitch": "-2Hz",
+    "effect": "airy",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Blutelf, überraschend bescheiden und freundlich, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Blutelf, bitter und verzweifelt statt arrogant, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-DE-KatjaNeural"
+    ],
+    "effect": "airy",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Blutelf: schnöselig, arrogant, gelangweilt, herablassend wie ein verwöhnter Adliger, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Blutelf, überraschend bescheiden und freundlich, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Blutelf, bitter und verzweifelt statt arrogant, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "draenei": {
+   "male": {
+    "edge": [
+     "de-CH-JanNeural"
+    ],
+    "pitch": "-6Hz",
+    "rate": "-5%",
+    "effect": "stone",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Draenei, leicht und heiter, fast beschwingt, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Draenei ohne Akzent, klar und nüchtern, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-CH-LeniNeural"
+    ],
+    "rate": "-5%",
+    "effect": "stone",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Draenei: tief und würdevoll mit schwerem osteuropäischem Akzent, langsam, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Draenei, leicht und heiter, fast beschwingt, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Draenei ohne Akzent, klar und nüchtern, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "orc": {
+   "male": {
+    "edge": [
+     "de-DE-ConradNeural",
+     "de-DE-KillianNeural"
+    ],
+    "pitch": "-9Hz",
+    "rate": "-5%",
+    "effect": "big",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Ork, überraschend sanft und nachdenklich, fast weise, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Ork mit hellerer, schneller, listiger Stimme, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-DE-AmalaNeural"
+    ],
+    "pitch": "-4Hz",
+    "effect": "big",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Ork: sehr tief, kehlig und knurrend, presst die Worte heraus, aggressiv, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Ork, überraschend sanft und nachdenklich, fast weise, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Ork mit hellerer, schneller, listiger Stimme, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "tauren": {
+   "male": {
+    "edge": [
+     "de-DE-ConradNeural"
+    ],
+    "pitch": "-12Hz",
+    "rate": "-12%",
+    "effect": "huge",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Tauren, jung und lebhaft, spricht schneller als erwartet, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Tauren, grimmig und knapp statt weise, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-DE-KatjaNeural"
+    ],
+    "pitch": "-6Hz",
+    "rate": "-8%",
+    "effect": "huge",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Tauren: extrem tief, sehr langsam, ruhig und ehrwürdig wie ein uralter Schamane, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Tauren, jung und lebhaft, spricht schneller als erwartet, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Tauren, grimmig und knapp statt weise, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "troll": {
+   "male": {
+    "edge": [
+     "de-DE-KillianNeural"
+    ],
+    "pitch": "-6Hz",
+    "rate": "+5%",
+    "effect": "rough",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Troll, nüchtern und sachlich, kaum Singsang, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Troll, manisch und schrill, wie ein Marktschreier, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-DE-AmalaNeural"
+    ],
+    "rate": "+5%",
+    "effect": "rough",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Troll: karibischer Singsang, gedehnte Vokale, lässig und geheimnisvoll, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Troll, nüchtern und sachlich, kaum Singsang, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Troll, manisch und schrill, wie ein Marktschreier, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "undead": {
+   "male": {
+    "edge": [
+     "de-DE-KillianNeural"
+    ],
+    "pitch": "-14Hz",
+    "rate": "-8%",
+    "effect": "hollow",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Untoter, überraschend klar und freundlich, fast lebendig, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Untoter, sarkastisch und amüsiert statt bitter, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-DE-KatjaNeural"
+    ],
+    "pitch": "-8Hz",
+    "rate": "-8%",
+    "effect": "hollow",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Untoter: krächzend, heiser und hohl, kalt und bitter, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Untoter, überraschend klar und freundlich, fast lebendig, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Untoter, sarkastisch und amüsiert statt bitter, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "goblin": {
+   "male": {
+    "edge": [
+     "de-AT-JonasNeural"
+    ],
+    "pitch": "+6Hz",
+    "rate": "+15%",
+    "effect": "small",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Goblin mit tiefer, ruhiger, geschäftsmäßiger Stimme, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Goblin, müde und gelangweilt, spricht langsam, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-AT-IngridNeural"
+    ],
+    "pitch": "+5Hz",
+    "rate": "+15%",
+    "effect": "small",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Goblin: schrill hoch, nasal und rasend schnell, marktschreierisch aufdringlich, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Goblin mit tiefer, ruhiger, geschäftsmäßiger Stimme, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Goblin, müde und gelangweilt, spricht langsam, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "vrykul": {
+   "male": {
+    "edge": [
+     "de-CH-JanNeural"
+    ],
+    "pitch": "-10Hz",
+    "rate": "-8%",
+    "effect": "huge",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Vrykul: donnernd tief, nordisch pathetisch, brüllt fast, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Vrykul: donnernd tief, nordisch pathetisch, brüllt fast, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Vrykul: donnernd tief, nordisch pathetisch, brüllt fast, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Vrykul: donnernd tief, nordisch pathetisch, brüllt fast, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Vrykul: donnernd tief, nordisch pathetisch, brüllt fast, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Vrykul: donnernd tief, nordisch pathetisch, brüllt fast, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Vrykul: donnernd tief, nordisch pathetisch, brüllt fast, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Vrykul: donnernd tief, nordisch pathetisch, brüllt fast, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Vrykul, leise und bedrohlich statt laut, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Vrykul, erzählerisch ruhig wie ein Skalde, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "naga": {
+   "male": {
+    "edge": [
+     "de-DE-KillianNeural"
+    ],
+    "pitch": "-15Hz",
+    "effect": "sibilant",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Naga, kühl und präzise, kaum Zischen, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Naga, hektisch und fiebrig, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-DE-KatjaNeural"
+    ],
+    "pitch": "-6Hz",
+    "effect": "sibilant",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Naga: zischend und schleppend, zieht jedes S lang, lauernd, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Naga, kühl und präzise, kaum Zischen, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Naga, hektisch und fiebrig, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "monster": {
+   "male": {
+    "edge": [
+     "de-DE-ConradNeural"
+    ],
+    "pitch": "-15Hz",
+    "rate": "-15%",
+    "elevenlabs": [
+     "VR6AewLTigWG4xSOukaG"
+    ],
+    "effect": "huge",
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Bestie mit unheimlich ruhiger, fast sanfter Stimme, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Bestie, hechelnd und wild, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-DE-KatjaNeural"
+    ],
+    "pitch": "-7Hz",
+    "rate": "-10%",
+    "effect": "huge",
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Bestie: unmenschlich tiefes Grollen, knurrend und schwerfällig, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Bestie mit unheimlich ruhiger, fast sanfter Stimme, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Bestie, hechelnd und wild, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  },
+  "narrator": {
+   "male": {
+    "edge": [
+     "de-DE-ConradNeural"
+    ],
+    "rate": "-3%",
+    "elevenlabs": [
+     "JBFqnCBsd6RMkjVDRZzb"
+    ],
+    "openai": [
+     {
+      "voice": "ash",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ballad",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "verse",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "cedar",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "fable",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "ash",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "onyx",
+      "style": "Erzähler, düster und beschwörend, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "echo",
+      "style": "Erzähler, warm und väterlich, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   },
+   "female": {
+    "edge": [
+     "de-DE-ConradNeural"
+    ],
+    "rate": "-3%",
+    "elevenlabs": [
+     "JBFqnCBsd6RMkjVDRZzb"
+    ],
+    "openai": [
+     {
+      "voice": "nova",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, in voller Ausprägung. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, voll ausgeprägt, älter und rauer. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, voll ausgeprägt, jung und energisch. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, mäßig ausgeprägt, aber eindeutig diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "marin",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, deutlich abgeschwächt, aber weiterhin unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "alloy",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, abgeschwächt, freundlich und warm, die Eigenart bleibt hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "nova",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, ruhiger und zurückgenommen gesprochen, aber immer noch klar als diese Figur erkennbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "coral",
+      "style": "Ruhiger Erzähler, sachlich und angenehm wie ein Hörbuchsprecher, sehr zurückgenommen und sachlich, die Herkunft bleibt aber hörbar. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "sage",
+      "style": "Erzähler, düster und beschwörend, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     },
+     {
+      "voice": "shimmer",
+      "style": "Erzähler, warm und väterlich, bleibt dabei aber unverkennbar diese Figur. Sprich Deutsch, im Charakter, aber gut verständlich."
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,10 @@
+## Interface: 20506
+## Title: VoiceOver Continued
+## Notes: Restores quest and gossip voiceovers on current Classic clients.
+## Version: 1.6.1
+## SavedVariables: VoiceOverDB
+## X-Part-Of: VoiceOver Continued
+## X-VoiceOver-Player: 1
+
+embeds.xml
+addon.xml
