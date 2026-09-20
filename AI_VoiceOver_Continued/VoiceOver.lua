@@ -235,6 +235,11 @@ function Addon:OnInitialize()
         elseif DataModules:HasRegisteredModules() then
             Debug:Record("data-ready", "Deferred VoiceOver data modules finished loading")
         end
+        -- Lines that got a real voiceover in the meantime no longer need to be collected
+        local pruned, voiced = pcall(MissingLines.Prune, MissingLines)
+        if pruned and voiced and voiced > 0 then
+            Debug:Record("collection-pruned", format("%d collected lines have a recording now", voiced))
+        end
         self:ShowMissingDataModulePopup()
     end
     local function ScheduleDeferredDataLoad()

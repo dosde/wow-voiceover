@@ -22,6 +22,8 @@ ROOT = Path(__file__).resolve().parent
 LINES_DIR = ROOT / "lines"
 COMBINED = ROOT / "collected_lines.json"
 PENDING = ROOT / "pending_lines.json"
+PRIORITIES = ROOT / "priorities.md"
+PRIORITY_COUNT = 100
 
 # How many different contributors must report the same text
 CONFIRMATIONS = 2
@@ -112,7 +114,41 @@ def rebuild():
 
     COMBINED.write_text(json.dumps(accepted, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     PENDING.write_text(json.dumps(pending, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    write_priorities(votes, accepted)
     return accepted, pending
+
+
+def write_priorities(votes, accepted):
+    """The more players ran into a line, the more it is worth voicing first."""
+    reports = {key: max(len(c) for c in variants.values()) for key, variants in votes.items()}
+    by_npc = defaultdict(lambda: {"lines": 0, "reports": 0, "name": None})
+    ranked = []
+    for key, entry in accepted.items():
+        count = reports.get(key, 0)
+        ranked.append((count, key, entry))
+        npc = entry.get("npcID") or entry.get("npc")
+        if npc:
+            group = by_npc[npc]
+            group["lines"] += 1
+            group["reports"] += count
+            group["name"] = entry.get("npc") or group["name"]
+    ranked.sort(key=lambda item: (-item[0], item[1]))
+
+    lines = ["# What to voice first", "",
+             "Ranked by how many contributors ran into a line, so the busiest quest hubs come first.",
+             "Rebuilt automatically from the contributions.", "",
+             f"## Top {PRIORITY_COUNT} lines", "",
+             "| Reports | Line | NPC | Text |", "| --- | --- | --- | --- |"]
+    for count, key, entry in ranked[:PRIORITY_COUNT]:
+        text = re.sub(r"\s+", " ", entry.get("text", ""))[:90].replace("|", "/")
+        npc = (entry.get("npc") or "?").replace("|", "/")
+        lines.append(f"| {count} | `{key[:40]}` | {npc} | {text} |")
+
+    top_npcs = sorted(by_npc.values(), key=lambda g: (-g["reports"], -g["lines"]))[:25]
+    lines += ["", "## Busiest NPCs", "", "| Reports | Lines | NPC |", "| --- | --- | --- |"]
+    for group in top_npcs:
+        lines.append(f"| {group['reports']} | {group['lines']} | {(group['name'] or '?').replace('|', '/')} |")
+    PRIORITIES.write_text(chr(10).join(lines) + chr(10), encoding="utf-8")
 
 
 def main():

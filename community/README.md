@@ -25,6 +25,11 @@ block a real line. Contributions carry a random id per installation, so votes ca
 without anyone knowing who contributed what; the GitHub account behind a pull request stays
 visible as usual.
 
+## What to voice first
+
+`priorities.md` is rebuilt with every change: it ranks the lines by how many contributors
+ran into them, and lists the busiest NPCs. Start there when voicing costs money.
+
 ## Using the collection
 
 `collected_lines.json` is rebuilt from every contribution. Feed it into the generator:

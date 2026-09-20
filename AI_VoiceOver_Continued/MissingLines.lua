@@ -248,6 +248,39 @@ function MissingLines:Count()
     return count
 end
 
+--- Counts how many collected lines have a recording by now, and drops those entries.
+---@return number voiced, number waiting
+function MissingLines:Prune()
+    local store, voiced, waiting = GetStore(), 0, 0
+    for key, entry in pairs(store) do
+        local done = false
+        if entry.event ~= "gossip" and entry.questID then
+            done = DataModules:PrepareSound({ event = Enums.SoundEvent.QuestAccept, questID = entry.questID,
+                text = entry.text, name = entry.npc }) and entry.event == "accept"
+        end
+        if done then
+            store[key] = nil
+            voiced = voiced + 1
+        else
+            waiting = waiting + 1
+        end
+    end
+    return voiced, waiting
+end
+
+--- Numbers for the status panel: recordings available and lines still missing.
+---@return number recordings, number waiting, number modules
+function MissingLines:GetStatus()
+    local recordings, modules = 0, 0
+    for _, module in DataModules:GetModules() do
+        modules = modules + 1
+        for _ in pairs(module.SoundLengthLookupByFileName or {}) do
+            recordings = recordings + 1
+        end
+    end
+    return recordings, self:Count(), modules
+end
+
 function MissingLines:Clear()
     Addon.db.global.MissingLines = {}
 end

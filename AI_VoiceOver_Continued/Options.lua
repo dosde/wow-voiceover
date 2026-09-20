@@ -388,7 +388,14 @@ local GeneralTab =
                 MissingCount = {
                     type = "description",
                     order = 10,
-                    name = function() return format("Collected lines: %d (saved on logout or /reload)", MissingLines:Count()) end,
+                    name = function()
+                        local recordings, waiting, modules = MissingLines:GetStatus()
+                        local total = recordings + waiting
+                        return format("Progress: %d of %d lines have a recording (%d%%), from %d sound pack%s.|n"
+                            .. "%d lines are collected and waiting; share them with \"/vo contribute\" (see Tools/contribute.py).",
+                            recordings, total, total > 0 and math.floor(recordings / total * 100 + 0.5) or 100,
+                            modules, modules == 1 and "" or "s", waiting)
+                    end,
                 },
             }
         },
@@ -770,6 +777,19 @@ local SlashCommands = {
             dropdownHidden = true,
             func = function(info)
                 Extras:PlayVoicePreviews()
+            end
+        },
+        Contribute = {
+            type = "execute",
+            order = 85.8,
+            name = "How to Contribute",
+            desc = "Explains how to share the collected lines with the community",
+            dropdownHidden = true,
+            func = function(info)
+                local _, waiting = MissingLines:GetStatus()
+                print(format("|cFF00CCFFVoiceOver:|r %d collected lines are waiting. Log out or /reload, then run:", waiting))
+                print("   python Interface\AddOns\AI_VoiceOver_Continued\Tools\contribute.py")
+                print("A line enters the community collection once a second player reports the same text.")
             end
         },
         Scan = {
