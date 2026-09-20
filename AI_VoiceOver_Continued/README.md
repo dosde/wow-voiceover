@@ -106,5 +106,13 @@ Tools (see `Tools/`):
   database, so a complete pack can be generated without meeting the NPCs first. German texts
   come from the same project's community translation.
 - `auto_generate.ps1` waits for the game to close and then generates the new lines.
+- `contribute.py` shares the collected lines with the community repository as a pull request.
+  A line is only added once a second contributor reports the same text.
+- `package_module.py` zips a generated pack the way it is installed and can publish it as a
+  release, so other players only have to download it.
+
+In game, `/vo scan` collects the description of every quest in your log that has no recording -
+useful for quests picked up before the addon was installed. The options panel shows how many
+lines already have a voiceover and how many are waiting to be shared.
 
 Put API keys into `Tools/.env` (`OPENAI_API_KEY=...`); that file is never committed.
